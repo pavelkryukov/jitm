@@ -43,7 +43,7 @@ Author(s): Manuel Linsmayer, Andreas Rossbacher
 
 	<!--  This property must point at the ProGuard JAR file, normally found     -->
 	<!--  in the lib directory of the ProGuard distribution.                    -->
-	<property name="proguard/lib"      value="${proguard}/lib/proguard.jar"      />
+	<property name="proguard/lib"      value="D:\Tools\proguard6.0.1\lib\proguard.jar"      />
 
 	<!--  This property is used for building binaries for RIM Blackberry.       -->
 	<!--  Set it to the location of the "rapc" binary which is part of the      -->
@@ -248,7 +248,7 @@ Author(s): Manuel Linsmayer, Andreas Rossbacher
 	<target name="compile" depends="preprocess-source">
 		<ant dir="${util/jlft}" inheritAll="false" />
 		<mkdir dir="${build}/compile/classes" />
-		<javac srcdir="${build}/init/src" destdir="${build}/compile/classes" bootclasspath="${midp/lib}" encoding="utf-8" target="1.1" source="1.2" debug="off" />
+		<javac srcdir="${build}/init/src" destdir="${build}/compile/classes" bootclasspath="${midp/lib}" encoding="utf-8" target="1.8" source="8" debug="off" />
 	</target>
 	
 	<!--  Internal target: obfuscate -->
