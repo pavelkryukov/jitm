@@ -3,5 +3,4 @@ sudo: false
 language: java
 
 script:
-  - ant
-
+  - ant "-Dskip-obfuscate=1"
