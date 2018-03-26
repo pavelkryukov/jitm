@@ -73,7 +73,7 @@ Author(s): Manuel Linsmayer, Andreas Rossbacher
 	<property name="3ns" value="###" />
 
 	<!--  Register Proguard task  -->
-	<taskdef name="proguard" classname="proguard.ant.ProGuardTask" classpath="${proguard/lib}" />
+	<!-- <taskdef name="proguard" classname="proguard.ant.ProGuardTask" classpath="${proguard/lib}" /> -->
 
 	<!--  Internal target: init   -->
 	<target name="init">
